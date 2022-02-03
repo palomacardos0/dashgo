@@ -28,7 +28,7 @@ export function Sidebar() {
             <Link display="flex" align="center">
               <Icon as={RiInputMethodLine} fontSize="20" />
               <Text ml="4" fontWeight="medium">
-                Automação
+                Formulários
               </Text>
             </Link>
             <Link display="flex" align="center">
