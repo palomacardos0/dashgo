@@ -64,6 +64,13 @@ const options = {
 
 
 
+const series2 = [
+  {
+    name: 'series2',
+    data: [58, 20, 120, 13, 9, 130, 50]
+
+  }
+]
 const series = [
   {
     name: 'series1',
@@ -83,7 +90,7 @@ export default function Dashbord() {
 
         <SimpleGrid flex="1" gap="4" minChildWidth="328px" align="flex-start">
           <Box
-            p="8"
+            p={["6", "8"]}
             bg="gray.800"
             borderRadius={8}
             pb="4"
@@ -102,7 +109,7 @@ export default function Dashbord() {
             <Text fontSize="lg" mb="4">
               Taxa de abertura
             </Text>
-            <Chart type="area" height={160} options={options} series={series} />
+            <Chart type="area" height={160} options={options} series={series2} />
           </Box>
         </SimpleGrid>
 
