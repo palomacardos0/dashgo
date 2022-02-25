@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import { Flex, SimpleGrid, Box, Text } from "@chakra-ui/react";
 import { Sidebar } from "../components/Sidebar";
 import theme from "@chakra-ui/core/dist/theme";
-//carraga o componente de forma dinamica 
+//carrega o componente de forma dinamica 
 const Chart = dynamic(() => import('react-apexcharts'), {
   ssr: false
 })
